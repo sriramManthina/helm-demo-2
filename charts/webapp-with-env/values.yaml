@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: sriram4795/dummy-node-with-env
+  tag: v1.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 3000
+  targetPort: 3000
+  nodePort: 31143  # Ensure this is unique
+
+envConfig:
+  NODE_ENV: production
