@@ -11,5 +11,3 @@ service:
   targetPort: 3000
   nodePort: 31143  # Ensure this is unique
 
-envConfig:
-  NODE_ENV: production
